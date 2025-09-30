@@ -42,4 +42,4 @@ todo el sitio.
 ---
 [Github Page](url)
 
-![Impulso Gym](./aset/Imgs/Logo.png)
+![Impulso Gym](./aset/Imgs/logo-favicon/Logo.png)

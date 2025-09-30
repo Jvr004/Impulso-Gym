@@ -4,9 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 /* Variables Globales */
 
 
-/* Tipografia Globlal */
+/* Tipografia Globlal de google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;800&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
