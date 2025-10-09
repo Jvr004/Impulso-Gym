@@ -40,6 +40,6 @@ primero, volver al último.
 todo el sitio.
 ### El sitio debe estar subido a Github y se debe utilizar github pages para desplegarlo en la web.
 ---
-[Github Page](url)
+[Github Page](https://jvr004.github.io/Impulso-Gym)
 
 ![Impulso Gym](./aset/Imgs/logo-favicon/Logo.png)
