@@ -1,9 +1,9 @@
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.header{
+.header {
     background-image: url(./aset/Imgs/bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.menu-container{
+.menu-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,33 +24,33 @@
     align-items: center;
     justify-content: space-between;
     z-index: 999;
-    background-color:#f0f8ff;
+    background-color: #f0f8ff;
     border-bottom: 1px solid #FFFFFF29;
 }
 
-.logo img{
+.logo img {
     padding: 10px;
     border: none;
     border-radius: 5%;
     max-width: 100px;
 }
 
-.menu-container .navbar ul li{
+.menu-container .navbar ul li {
     position: relative;
     float: left;
     padding-bottom: 10px;
 }
 
-.menu-container .navbar ul li a{
+.menu-container .navbar ul li a {
     display: block;
     color: #000;
     font-size: 18px;
     padding: 20px;
 }
 
-.menu-container .navbar ul li a:hover{
+.menu-container .navbar ul li a:hover {
     color: #E1160d;
-    border-bottom: 1px solid  #E1160d;
+    border-bottom: 1px solid #E1160d;
 }
 
 /* Ocultar el menu amburguesa*/
@@ -59,13 +59,13 @@
     display: none;
 }
 
-.menu-icon{
+.menu-icon {
     width: 25px;
     display: none;
     cursor: pointer;
 }
 
-.header-info h1{
+.header-info h1 {
 
     color: #fadd8c;
     text-transform: uppercase;
@@ -76,14 +76,14 @@
     text-shadow: 0 0 20px #E1160d;
 }
 
-.header-info p{
+.header-info p {
     color: #FFFFFF;
     font-size: 22px;
     text-transform: capitalize;
     margin-bottom: 35px;
 }
 
-.btn-1{
+.btn-1 {
     display: inline-block;
     padding: 10px 35px;
     border-radius: 10px;
@@ -93,11 +93,11 @@
     text-transform: uppercase;
 }
 
-.btn-1:hover{
+.btn-1:hover {
     background-color: #A70A15;
 }
 
-.carousel-container{
+/*.carousel-container{
     width: 100%;
     height: 100vh;
     background-color: #000;
@@ -116,15 +116,17 @@
     padding: 30px;
     background-color: #a003037c transparent;
 }
-
+    Preguntar a Javier
+*/
 /* seccion oferta */
 .gym {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 100px 0;
-  gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+    gap: 50px;
 }
+
 .gym-1 {
     width: 50%;
     padding-right: 150px;
@@ -132,12 +134,12 @@
 
 .gym-1 h2 {
     font-size: 40px;
-    color:#000;
+    color: #000;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 35px;
     display: flex;
-    align-items:baseline;
+    align-items: baseline;
     gap: 10px;
 }
 
@@ -166,25 +168,26 @@
 }
 
 .img-1,
-.img-2, .img-3 {
+.img-2,
+.img-3 {
     width: 250px;
     margin-right: 20px;
 }
 
 /* seccion oferta */
-.footer{
+.footer {
     background-color: 000;
     display: flex;
     justify-content: space-evenly;
     margin: 0px auto;
 }
 
-.footer img{
+.footer img {
     padding: 10px;
     width: fit-content;
 }
 
-.footer a{
+.footer a {
     display: block;
     color: #000;
     font-size: 18px;
@@ -192,7 +195,37 @@
 
 }
 
-.footer a:hover{
+.footer a:hover {
     color: #E1160d;
-    border-bottom: 1px solid  #E1160d;
+    border-bottom: 1px solid #E1160d;
+}
+
+
+/* carrusel */
+.carousel-container {
+    width: 100%;
+    margin: 0px 0px;
+    height: 100vh;
+    background-color: #000;
+}
+
+@media(min-width:768px) {
+    .carousel {
+        margin: 0px 60px;
+    }
+}
+.carousel-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width:fit-content;
+    height: 300px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.carusel-track{
+
 }
