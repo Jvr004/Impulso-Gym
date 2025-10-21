@@ -10,7 +10,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    overflow: hidden; /*no sobresale el carrusel*/
+    overflow: hidden;
 }
 
 .menu-container {
@@ -22,8 +22,7 @@
     align-items: center;
     justify-content: space-between;
     z-index: 999;
-    background-color: #f0f8ff;
-    border-bottom: 1px solid #FFFFFF29;
+    background-color: transparent; 
 }
 
 .logo img {
@@ -41,7 +40,7 @@
 
 .menu-container .navbar ul li a {
     display: block;
-    color: #000;
+    color: #E11680;; 
     font-size: 18px;
     padding: 20px;
 }
@@ -63,7 +62,80 @@
     cursor: pointer;
 }
 
+/* carrusel */
+.carrusel {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
 
+.imagenes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    margin: 0;
+    display: block;
+}
+
+
+/*botones*/
+.atras,
+.adelante {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #E11680;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.atras:hover,
+.adelante:hover {
+    background-color: #A70A15;
+    transform: translateY(-50%) scale(1.2);
+}
+
+.atras {
+    left: 15px;
+}
+
+.adelante {
+    right: 20px;
+}
+
+
+.atras svg,
+.adelante svg {
+    width: 24px;
+    height: 24px;
+    transition: background-color 0.3s ease;
+}
+
+/* fin de carrusel */
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/* Tienda*/
 /* seccion oferta */
 .gym {
     display: flex;
@@ -146,71 +218,12 @@
     border-bottom: 1px solid #E1160d;
 }
 
+/* fin de Tienda*/
 
-/* carrusel */
-.carrusel{
-    width: 100%;
-   height: 600px;
-    margin: 0  auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.imagenes{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.img{
-    height:600px;
-    width: 1600px;
-    border-radius: 15px;
-    margin: 0;
-    display: block;
-    filter: saturate(175%);
-}
+/*----------------------------------------------------------------------------------------------------------------*/
 
 
-/*botones*/
-.atras,
-.adelante {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: #E11680;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.atras:hover,
-.adelante:hover {
-   background-color: #A70A15;
-    transform: translateY(-50%) scale(1.2);
-}
-
-.atras {
-    left: 15px;
-}
-
-.adelante {
-    right: 20px;
-}
 
 
-.atras svg,
-.adelante svg{
-    width: 24px;
-    height: 24px;
-    transition: background-color 0.3s ease;
-}
+
+
