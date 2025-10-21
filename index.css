@@ -63,28 +63,6 @@
     cursor: pointer;
 }
 
-.header-info h1 {
-
-    color: #fadd8c;
-    text-transform: uppercase;
-    font-size: 70px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    text-shadow: 0 0 20px #E1160d;
-}
-
-.header-info p {
-    color: #FFFFFF;
-    font-size: 22px;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-}
-
-.header-content{
-    position: relative;
-    z-index: 2;
-}
 
 /* seccion oferta */
 .gym {
@@ -172,28 +150,67 @@
 /* carrusel */
 .carrusel{
     width: 100%;
-    max-width: 1600px;
+   height: 600px;
     margin: 0  auto;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .imagenes{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 .img{
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
     height:600px;
-    width: 100%;
+    width: 1600px;
     border-radius: 15px;
-    margin: 5px;
-    object-fit: cover;
+    margin: 0;
+    display: block;
     filter: saturate(175%);
+}
+
+
+/*botones*/
+.atras,
+.adelante {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #E11680;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.atras:hover,
+.adelante:hover {
+   background-color: #A70A15;
+    transform: translateY(-50%) scale(1.2);
+}
+
+.atras {
+    left: 15px;
+}
+
+.adelante {
+    right: 20px;
+}
+
+
+.atras svg,
+.adelante svg{
+    width: 24px;
+    height: 24px;
+    transition: background-color 0.3s ease;
 }

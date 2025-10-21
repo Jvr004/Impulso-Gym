@@ -31,3 +31,12 @@ adelante.addEventListener('click', function () {
     }
     imagen.innerHTML = `<img class="img" src="${imagenes[actual].url}" alt="gym" loading="lazy">`;
 });
+
+// Avance automático cada 2 segundos
+setInterval(() => {
+    actual++;
+    if (actual >= imagenes.length) {
+        actual = 0;
+    }
+    imagen.innerHTML = `<img class="img" src="${imagenes[actual].url}" alt="gym" loading="lazy">`;
+}, 2000);
