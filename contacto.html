@@ -11,42 +11,45 @@
 </head>
 
 <body>
-    <div class="formularioCont">
-        <form onsubmit="return validar()" id="miFormulario">
+    <main>
+        <div class="formularioCont">
+            <form onsubmit="return validar()" id="miFormulario">
 
-            <h2 class="TituloFormulario"> Contacto</h2>
+                <h2 class="TituloFormulario"> Contacto</h2>
 
-            <label for="nombre">Nombre Completo: <span id="nombreError" class="error"></span></label>
-            <input type="text" id="nombre" placeholder="Ingresa tu nombre completo...">
+                <label for="nombre">Nombre Completo: <span id="nombreError" class="error"></span></label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre completo...">
 
-            <label for="apellido">Apellido <span id="apellidoError" class="error"></span></label>
-            <input type="text" id="apellido" placeholder="Ingresa tu apellido...">
+                <label for="apellido">Apellido <span id="apellidoError" class="error"></span></label>
+                <input type="text" id="apellido" placeholder="Ingresa tu apellido...">
 
-            <label for="email">Correo electronico: <span id="emailError" class="error"></span></label>
-            <input type="text" id="email" placeholder="xxxxxx@gmail.com">
+                <label for="email">Correo electronico: <span id="emailError" class="error"></span></label>
+                <input type="text" id="email" placeholder="xxxxxx@gmail.com">
 
-            <label for="celular">Numero Celular: <span id="celularError" class="error"></span></label>
-            <input type="number" id="celular" placeholder="2664XXXXXX">
+                <label for="celular">Numero Celular: <span id="celularError" class="error"></span></label>
+                <input type="number" id="celular" placeholder="2664XXXXXX">
 
-            <label for="pregunta">Pregunta y/o consulta: </label>
-            <textarea id="pregunta" name="pregunta" maxlength="300"></textarea>
+                <label for="pregunta">Pregunta y/o consulta: </label>
+                <textarea id="pregunta" name="pregunta" maxlength="300"></textarea>
 
-            <button type="submit" id="botonEnviar">Enviar</button>
+                <button type="submit" id="botonEnviar">Enviar</button>
 
-        </form>
-        <div id="mensajes">
+            </form>
+            <div id="mensajes">
+
+            </div>
 
         </div>
 
-    </div>
 
+        <div class="boton">
+            <a href="#" class="boton1">Inicio</a>
+        </div>
 
-    <div class="boton">
-        <a href="#" class="boton1">Inicio</a>
-    </div>
+        <script src="contacto.js">
 
-    <script src="contacto.js">
-        
-    </script>
+        </script>
+    </main>
 </body>
+
 </html>
