@@ -68,6 +68,7 @@ function validar() {
 
         p2.innerHTML = "¡Pronto nos comunicaremos contigo!";
         p2.style.textAlign = "center";
+        p.style.fontWeight = "bold";
 
         mensajes.appendChild(p);
         mensajes.appendChild(p2);
