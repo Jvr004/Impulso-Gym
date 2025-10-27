@@ -39,4 +39,4 @@ setInterval(() => {
         actual = 0;
     }
     imagen.innerHTML = `<img class="img" src="${imagenes[actual].url}" alt="gym" loading="lazy">`;
-}, 4000);
+}, 6000);
