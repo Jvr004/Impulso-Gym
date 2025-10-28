@@ -60,22 +60,22 @@ button:hover {
 }
 
 .boton-inicio {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .button1 {
-  background-color: #E11680;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none; 
-  font-size: 16px;
+    background-color: #E11680;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .button1:hover {
-  background-color: #E1160d;
-  border-bottom: 2px solid #E1160d;
+    background-color: #E1160d;
+    border-bottom: 2px solid #E1160d;
 }

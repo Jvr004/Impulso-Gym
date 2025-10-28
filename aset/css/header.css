@@ -1,0 +1,25 @@
+.header{
+    background-color: #00000015;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.menu-container .navbar ul li a {
+    color: #E11680; 
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+
+}
+
+.menu-container .navbar ul li a:hover {
+    color: #E1160d;
+    border-bottom: 1px solid #E1160d;
+}
