@@ -1,4 +1,69 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.header {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    z-index: 999;
+    background-color: transparent; 
+
+}
+
+.logo img {
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+    max-width: 100px;
+}
+
+.menu-container .navbar ul li {
+    position: relative;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.menu-container .navbar ul li a {
+    display: block;
+    color: #E11680;; 
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 1.5px 0 0 #0f0f0f;
+}
+
+.menu-container .navbar ul li a:hover {
+    color: #E1160d;
+    border-bottom: 1px solid #E1160d;
+}
+
+/* Ocultar el menu amburguesa*/
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+    display: none;
+    cursor: pointer;
+}
 
 /* carrusel */
 .carrusel {
@@ -131,13 +196,31 @@
 }
 
 /* seccion oferta */
+.footer {
+    background-color: 000;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px auto;
+}
+
+.footer img {
+    padding: 10px;
+    width: fit-content;
+}
+
+.footer a {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.footer a:hover {
+    color: #E1160d;
+    border-bottom: 1px solid #E1160d;
+}
 
 /* fin de Tienda*/
 
 /*----------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
