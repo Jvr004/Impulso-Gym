@@ -2,6 +2,7 @@ let form = document.getElementById('miFormulario');
 let primerElemento = document.querySelector('form input');
 primerElemento.focus();
 let reg_correo = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
+let reg_celu = /^[0-9]{10}$/;
 
 function validar() {
     let nombre = document.getElementById('nombre').value;
@@ -47,6 +48,17 @@ function validar() {
         validado = false;
     } else {
         emailError.textContent = '';
+    }
+
+    // validar celular
+   if (celular.trim() === '') {
+        celularError.innerHTML = '*El campo CELULAR debe estar completo*';
+        validado = false;
+    } else if (!reg_celu.test(celular)) {
+        celularError.innerHTML = '*Debe contener solo números (10 dígitos)*';
+        validado = false;
+    } else {
+        celularError.textContent = '';
     }
 
     mensajes.innerHTML = '';
