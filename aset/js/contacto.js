@@ -80,7 +80,7 @@ function validar() {
         p.style.textAlign = "center";
         p.style.fontWeight = "bold";
 
-        p2.innerHTML ="SR/SRA" +apellido+ "¡Pronto nos comunicaremos contigo!";
+        p2.innerHTML ="Sr/Sra " +apellido+ " ¡Pronto nos comunicaremos contigo!";
         p2.style.textAlign = "center";
         p2.style.fontWeight = "bold";
 
