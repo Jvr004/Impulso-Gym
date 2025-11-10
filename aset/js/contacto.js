@@ -74,7 +74,9 @@ function validar() {
     } else {
         let p = document.createElement("p");
         let p2 = document.createElement("p");
-        p.innerHTML = "¡Gracias " + nombre + " por ponerte en contacto con nosotros!";
+        let p3 = document.createElement("p");
+
+        p.innerHTML = "¡Gracias " + nombre + + apellido +" por ponerte en contacto con nosotros!";
         p.style.textAlign = "center";
         p.style.fontWeight = "bold";
 
@@ -82,8 +84,14 @@ function validar() {
         p2.style.textAlign = "center";
         p.style.fontWeight = "bold";
 
+        p3.innerHTML = "Hemos enviado un cupon de descuento! a tu correo " +email+ "y a tu celu: " + celular+ " DISFRUTALO!!!" ;
+        p3.style.textAlign = "center";
+        p.style.fontWeight = "bold";
+
         mensajes.appendChild(p);
         mensajes.appendChild(p2);
+        mensajes.appendChild(p3);
+
 
         form.reset();
         return false;
